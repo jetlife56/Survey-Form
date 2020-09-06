@@ -5,10 +5,69 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Survey Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/assets/styles/rest.css">
         <link rel="stylesheet" href="/assets/styles/style.css">
     </head>
     <body>
+        <header id="title-content">
+            <h1 id="title">Real Estate Investor Survey</h1>
+            <p id="description"></p>
+        </header>
+        <main id="start-content" class="show">
+            <h2 class="startpage-title"></h2>
+            <div class="startpage-description">
+
+            </div>
+        </main>
         
+        <main id="main-content" class="hidden">
+            <form name="survey-textbody" id="survey-form">
+                <div class="form-content" id="name-textbox"> 
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="John Smith" required>
+                </div>
+                <div class="form-content" id="email-textbox"> 
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-content" id="age-choice"> 
+                    <h3 class="question-title">Age</h3>
+                    <div class="dropdown-menu" id="age-dropdown">
+
+                    </div>
+                </div>
+            </form>
+        </main>
+        <article>
+            <form>
+                <div class="form-content" id="projects-choice"> 
+                    <!--What type of project the investor are doing or instered in doing.
+                    1. Fix/Flip
+                    2. Wholesaling/Assign
+                    3. Renting
+                    4. Fix/Rent
+                    5. House-Hacking-->
+                </div>
+                <div class="form-content" id="propeties-choice">
+                    <!--What type(s) of properties do you like? Select all that apply
+                    1.Residental
+                    2.Commerical
+                    3.Vacant Lot
+                    4.Ranch/Land
+                    5.Mobile Homes
+                -->
+                </div>   
+            </form>
+        </article>
+
+
+
+            
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="/assets/js/app.js"></script>
     </body>
 </html>
