@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jetlife56/Survey-Form#readme",
   "dependencies": {
-    "bulma": "^0.9.0"
+    "http-server": "^0.12.3"
   }
 }

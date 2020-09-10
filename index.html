@@ -5,69 +5,81 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Survey Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/assets/styles/rest.css">
-        <link rel="stylesheet" href="/assets/styles/style.css">
+        <link rel="stylesheet" href="assets/styles/css/reset.css">
+        <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+        <link rel="stylesheet" href="assets/styles/css/style.css">
+
     </head>
     <body>
-        <header id="title-content">
-            <h1 id="title">Real Estate Investor Survey</h1>
-            <p id="description"></p>
+        <header id="title-content" class="columns">
+            <h1 id="title" class="title column">Real Estate Investor Survey</h1>
+            <p id="introduction"class="column">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit</p>
         </header>
-        <main id="start-content" class="show">
-            <h2 class="startpage-title"></h2>
-            <div class="startpage-description">
-
-            </div>
-        </main>
-        
-        <main id="main-content" class="hidden">
-            <form name="survey-textbody" id="survey-form">
-                <div class="form-content" id="name-textbox"> 
+        <main id="start-content" class="tile is-parent">
+            <form class="survey-textbody tile is-child columns" id="survey-form">
+                <div class="form-content column" id="name-textbox"> 
                     <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="John Smith" required>
+                    <input id="name" type="text" name="Name" placeholder="John Smith" required>
                 </div>
-                <div class="form-content" id="email-textbox"> 
+                <div class="form-content column" id="email-textbox"> 
                     <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="example@email.com" required>
+                    <input id="email" type="email" name="Email" placeholder="example@email.com" required>
                 </div>
-                <div class="form-content" id="age-choice"> 
-                    <h3 class="question-title">Age</h3>
-                    <div class="dropdown-menu" id="age-dropdown">
-
-                    </div>
+                <div class="form-content column" id="age-choice"> 
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="Age">
                 </div>
             </form>
         </main>
         <article>
-            <form>
-                <div class="form-content" id="projects-choice"> 
-                    <!--What type of project the investor are doing or instered in doing.
+            <form class="form-content" id="form-check">
+                <!--<div class="form-content" id="projects-choice"> 
+                    What type of project the investor are doing or instered in doing.
                     1. Fix/Flip
                     2. Wholesaling/Assign
                     3. Renting
                     4. Fix/Rent
-                    5. House-Hacking-->
+                    5. House-Hacking
                 </div>
                 <div class="form-content" id="propeties-choice">
-                    <!--What type(s) of properties do you like? Select all that apply
+                    What type(s) of properties do you like? Select all that apply.
                     1.Residental
                     2.Commerical
                     3.Vacant Lot
                     4.Ranch/Land
                     5.Mobile Homes
-                -->
-                </div>   
+                
+                </div> 
+                <div class="form-content" id="experience">
+                     How much real estate investing experience do you have?
+                    * I am a new investor
+                    * I HAVE CLOSED MORE THAN ONE INVESTMENT PROPERTY TRANSACTION
+                    * I am a soasoned real estate investor
+                </div> 
+                <div class="form-content" id="relationship">
+                     Let us know what type of residential properties (if any) you are most interested in: 
+                    * Single Family Homes
+                    * Duplexes
+                    * Four Plexes
+                    * Condos
+                    * Mobile Homes
+                    * I just want to find a deal!!!
+                </div>
+                <div class="form-content" id="relationship">
+                     Let us know what type of commerical properties (if any) you are most interested in: 
+                    * Industrial
+                    * Office Space
+                    * Apartments
+                    * Retail
+                    * I just want to find a deal!!!
+                </div>-->
             </form>
         </article>
+        <footer>
 
-
-
-            
-
-
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="/assets/js/app.js"></script>
+        <script src="assets/js/app.js"></script>
     </body>
 </html>
